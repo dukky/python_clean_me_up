@@ -16,10 +16,11 @@ print("Ok, hello there " + name)
 possible_numbers = []
 for i in range(3):
     possible_numbers.append(random.randint(0, 1000))
-while len(possiblenumbers) > 0:
+while len(possible_numbers) > 0:
     secret_number = possible_numbers.pop()
     number_guessed_yet = False
     tries = 0
+    print("starting a new round")
     while not number_guessed_yet:
         guess = raw_input(name + ", guess what the number might be :: ")
         guess = int(guess)
